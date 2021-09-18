@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "plugins": [
+        "@babel/plugin-proposal-class-properties"
+      ]
+    }
+  },
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "no-plusplus": "off",
+    "eqeqeq": "off",
+    "curly": "error",
+    "semi": [
+      "error",
+      "always",
+      {
+        "omitLastInOneLineBlock": true
+      }
+    ]
+  }
+}
