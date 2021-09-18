@@ -1,0 +1,32 @@
+{
+  "name": "@doublehrajput/eslint-config",
+  "version": "0.1.1",
+  "description": "> TODO: description",
+  "author": "doubleh-rajput <doublehrajput@gmail.com>",
+  "homepage": "https://github.com/doubleh-rajput/npm-packages#readme",
+  "license": "ISC",
+  "main": "lib/main.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doubleh-rajput/npm-packages.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/doubleh-rajput/npm-packages/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}

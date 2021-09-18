@@ -1,13 +1,4 @@
-/**
- * @param {null|Node} next
- * @param {*} value
- */
-class Node {
-  next = null;
-  constructor(value) {
-    this.value = value;
-  }
-}
+import Node from './utils/SinglyLinkedListNode'
 
 /**
  * @param {Number} length
@@ -168,6 +159,5 @@ class SinglyLinkedList {
     }
   }
 }
-
 
 export default SinglyLinkedList
