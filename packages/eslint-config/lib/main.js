@@ -1,37 +1,42 @@
 'use strict';
 
-module.exports = {
-  "rules": {
-    "eqeqeq": "off",
-    "curly": "error",
-    "quotes": [
-      "error",
-      "double"
-    ]
-  },
-  "env": {
-    "browser": true
-  },
-  "indent": [
-    "error",
-    4
-  ],
-  "linebreak-style": [
-    "error",
-    "unix"
-  ],
-  "quotes": [
-    "error",
-    "double"
-  ],
-  "semi": [
-    "error",
-    "always"
-  ],
-  "no-empty": "warn",
-  "no-cond-assign": [
-    "error",
-    "always"
-  ],
-  "for-direction": "off"
-}
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var env = {
+	browser: true,
+	es2021: true,
+	node: true
+};
+var parserOptions = {
+	ecmaVersion: 12,
+	sourceType: "module"
+};
+var rules = {
+	"no-unused-expressions": [
+		"error",
+		{
+			allowShortCircuit: true,
+			allowTernary: true
+		}
+	],
+	"no-plusplus": "off",
+	eqeqeq: "off",
+	curly: "error",
+	semi: [
+		"error",
+		"always",
+		{
+			omitLastInOneLineBlock: true
+		}
+	]
+};
+var config = {
+	env: env,
+	"extends": [
+	"eslint:recommended"
+],
+	parserOptions: parserOptions,
+	rules: rules
+};
+
+exports['default'] = config;

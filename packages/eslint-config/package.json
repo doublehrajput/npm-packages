@@ -1,7 +1,7 @@
 {
   "name": "@doublehrajput/eslint-config",
   "version": "0.1.2",
-  "description": "> TODO: description",
+  "description": "Eslint Config",
   "author": "doubleh-rajput <doublehrajput@gmail.com>",
   "homepage": "https://github.com/doubleh-rajput/npm-packages#readme",
   "license": "ISC",
@@ -18,7 +18,9 @@
     "url": "git+https://github.com/doubleh-rajput/npm-packages.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "lint": "eslint",
+    "build": "rollup -c",
+    "prebuild": "rimraf lib"
   },
   "bugs": {
     "url": "https://github.com/doubleh-rajput/npm-packages/issues"
@@ -27,6 +29,8 @@
     "access": "public"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "@rollup/plugin-json": "^4.1.0",
+    "eslint": "^7.32.0",
+    "rollup": "^2.56.3"
   }
 }
