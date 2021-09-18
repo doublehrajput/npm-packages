@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var env = {
 	browser: true,
 	es2021: true,
@@ -39,4 +37,4 @@ var config = {
 	rules: rules
 };
 
-exports['default'] = config;
+module.exports = config;

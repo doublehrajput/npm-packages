@@ -6,7 +6,7 @@ export default {
     file: "lib/main.js",
     format: 'cjs',
     sourcemap: false,
-    exports: 'named',
+    exports: 'default'
   },
   plugins: [
     // ... other rollup plugins
