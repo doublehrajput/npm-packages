@@ -1,6 +1,6 @@
 {
   "name": "@doublehrajput/datastructure",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "description": "Algorithms in Javasript",
   "keywords": [
     "Javascript",
@@ -47,7 +47,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@doublehrajput/eslint-config-babel": "^0.1.5",
-    "@doublehrajput/prettier-config": "^0.1.2"
+    "@doublehrajput/eslint-config-babel": "^0.1.6",
+    "@doublehrajput/prettier-config": "^0.1.6"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@doublehrajput/prettier-config",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "description": "Prettier Config",
   "author": "doublehrajput <doublehrajput@gmail.com>",
   "homepage": "https://github.com/doubleh-rajput/npm-packages/packages/prettier-config/#readme",
@@ -28,9 +28,9 @@
     "access": "public"
   },
   "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
     "eslint": "^7.32.0",
     "prettier": "^2.4.1",
-    "rollup": "^2.56.3",
-    "@rollup/plugin-json": "^4.1.0"
+    "rollup": "^2.56.3"
   }
 }
