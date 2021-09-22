@@ -1,6 +1,6 @@
 {
   "name": "@doublehrajput/eslint-config-babel",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Babel Eslint Config",
   "author": "doublehrajput <doublehrajput@gmail.com>",
   "homepage": "https://github.com/doublehrajput/npm-packages/blob/master/packages/eslint-config-babel/README.md",
