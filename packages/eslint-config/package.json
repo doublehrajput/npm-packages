@@ -3,7 +3,7 @@
   "version": "0.1.6",
   "description": "Eslint Config",
   "author": "doublehrajput <doublehrajput@gmail.com>",
-  "homepage": "https://github.com/doubleh-rajput/npm-packages/packages/eslint-config#readme",
+  "homepage": "https://github.com/doublehrajput/npm-packages/blob/master/packages/eslint-config/README.md",
   "license": "ISC",
   "main": "lib/main.js",
   "directories": {
