@@ -1,9 +1,9 @@
 {
   "name": "@doublehrajput/prettier-config",
   "version": "0.1.2",
-  "description": "> TODO: description",
-  "author": "doubleh-rajput <doublehrajput@gmail.com>",
-  "homepage": "https://github.com/doubleh-rajput/npm-packages#readme",
+  "description": "Prettier Config",
+  "author": "doublehrajput <doublehrajput@gmail.com>",
+  "homepage": "https://github.com/doubleh-rajput/npm-packages/packages/prettier-config/#readme",
   "license": "ISC",
   "main": "lib/main.js",
   "directories": {
@@ -18,7 +18,8 @@
     "url": "git+https://github.com/doubleh-rajput/npm-packages.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "rollup -c",
+    "prebuild": "rimraf lib"
   },
   "bugs": {
     "url": "https://github.com/doubleh-rajput/npm-packages/issues"
@@ -27,6 +28,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1",
+    "rollup": "^2.56.3",
+    "@rollup/plugin-json": "^4.1.0"
   }
 }

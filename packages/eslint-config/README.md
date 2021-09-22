@@ -1,11 +1,21 @@
-# `eslint-config`
+[![version](https://img.shields.io/npm/v/@doublehrajput/eslint-config)](https://www.npmjs.com/package/@doublehrajput/eslint-config)
 
-> TODO: description
+# `@doublehrajput/eslint-config`
+
+> Eslint configuration for any javascript Project
 
 ## Usage
 
 ```
-const eslintConfig = require('eslint-config');
+npm install --save-dev @doublehrajput/eslint-config
+or 
+yarn add  @doublehrajput/eslint-config
+```
 
-// TODO: DEMONSTRATE API
+
+Create a .eslintrc.json file in root folder of your project. Add following in your prettierrc file
+
+ 
+```    
+"extends": "@doublehrajput/eslint-config"
 ```

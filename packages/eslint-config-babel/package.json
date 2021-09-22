@@ -1,9 +1,9 @@
 {
   "name": "@doublehrajput/eslint-config-babel",
   "version": "0.1.5",
-  "description": "> TODO: description",
-  "author": "doubleh-rajput <doublehrajput@gmail.com>",
-  "homepage": "https://github.com/doubleh-rajput/npm-packages#readme",
+  "description": "Babel Eslint Config",
+  "author": "doublehrajput <doublehrajput@gmail.com>",
+  "homepage": "https://github.com/doubleh-rajput/npm-packages/packages/eslint-config-babel/#readme",
   "license": "ISC",
   "main": "lib/main.js",
   "directories": {
@@ -31,6 +31,7 @@
     "@babel/plugin-syntax-class-properties": "^7.12.13",
     "@babel/preset-env": "^7.15.6",
     "eslint": "^7.32.0",
+    "prettier": "^2.4.1",
     "rollup": "^2.56.3"
   },
   "publishConfig": {

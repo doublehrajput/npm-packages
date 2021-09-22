@@ -1,9 +1,7 @@
-/**
- * @param {null|Node} next
- * @param {*} value
- */
 class Node {
-  next = null;
+  left = null;
+  right = null;
+
   constructor(value) {
     this.value = value;
   }

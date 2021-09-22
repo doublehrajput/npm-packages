@@ -1,0 +1,11 @@
+{
+  "extends": "@doublehrajput/eslint-config-babel",
+  "rules": {
+    "curly": 0
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "jest": true
+  }
+}

@@ -7,9 +7,13 @@
     "Data Structure",
     "Singly Linked List"
   ],
-  "author": "doubleh-rajput <doublehrajput@gmail.com>",
-  "homepage": "",
+  "author": "doublehrajput <doublehrajput@gmail.com>",
+  "homepage": "https://github.com/doubleh-rajput/npm-packages/packages/datastructure#readme",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doublehrajput/npm-packages.git"
+  },
   "main": "lib/index.js",
   "directories": {
     "lib": "lib",
@@ -29,6 +33,7 @@
     "@babel/preset-env": "^7.15.6",
     "eslint": "^7.32.0",
     "jest": "^27.2.0",
+    "prettier": "^2.4.1",
     "rollup": "^2.56.3"
   },
   "jest": {
@@ -40,5 +45,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@doublehrajput/eslint-config-babel": "^0.1.5",
+    "@doublehrajput/prettier-config": "^0.1.2"
   }
 }

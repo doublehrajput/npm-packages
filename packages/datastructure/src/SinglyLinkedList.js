@@ -1,4 +1,4 @@
-import Node from './utils/SinglyLinkedListNode'
+import Node from "./utils/SinglyLinkedListNode";
 
 /**
  * @param {Number} length
@@ -25,15 +25,14 @@ class SinglyLinkedList {
   }
 
   pop() {
-    if (this.length === 0)
-      return undefined;
+    if (this.length === 0) return undefined;
 
     let currentNode = this.head;
     let newTail = currentNode;
 
     while (currentNode.next !== null) {
-      newTail = currentNode
-      currentNode = currentNode.next
+      newTail = currentNode;
+      currentNode = currentNode.next;
     }
 
     this.tail = newTail;
@@ -50,8 +49,7 @@ class SinglyLinkedList {
   }
 
   shift() {
-    if (this.length === 0)
-      return undefined;
+    if (this.length === 0) return undefined;
 
     let headNode = this.head;
     this.head = headNode.next;
@@ -75,20 +73,18 @@ class SinglyLinkedList {
       this.head = node;
     }
 
-
     this.length++;
-    return node
+    return node;
   }
 
   get(index) {
-    if (index < 0 || index > this.length)
-      return null;
+    if (index < 0 || index > this.length) return null;
 
     let counter = 0;
     let current = this.head;
     while (counter < index) {
       current = current.next;
-      counter++
+      counter++;
     }
 
     return current;
@@ -106,18 +102,15 @@ class SinglyLinkedList {
   }
 
   insert(index, value) {
-    if (index < 0 || index > this.length)
-      return false;
+    if (index < 0 || index > this.length) return false;
 
-    if (index === this.length)
-      return this.push(value);
+    if (index === this.length) return this.push(value);
 
-    if (index === 0)
-      return this.unshift(value);
+    if (index === 0) return this.unshift(value);
 
     let prev = this.get(index - 1);
     let temp = prev.next;
-    let node = new Node(value)
+    let node = new Node(value);
 
     prev.next = node;
     node.next = temp;
@@ -125,14 +118,11 @@ class SinglyLinkedList {
   }
 
   remove(index) {
-    if (index < 0 || index > this.length)
-      return false;
+    if (index < 0 || index > this.length) return false;
 
-    if (index === this.length - 1)
-      return this.pop();
+    if (index === this.length - 1) return this.pop();
 
-    if (index === 0)
-      return this.shift();
+    if (index === 0) return this.shift();
 
     let prev = this.get(index - 1);
     let removed = prev.next;
@@ -158,6 +148,20 @@ class SinglyLinkedList {
       node = next;
     }
   }
+
+  // Iterator
+  [Symbol.iterator]() {
+    let node = { next: this.head };
+    return {
+      next: function () {
+        node = node.next;
+        return {
+          done: !node,
+          value: node,
+        };
+      },
+    };
+  }
 }
 
-export default SinglyLinkedList
+export default SinglyLinkedList;
